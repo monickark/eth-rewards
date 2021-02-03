@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Slen Coin ICO</title>
+  
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="description" content="Slen Coin ICO">
+  <meta name="author" content="Slenex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+
+</head>
+
+<body>
+  <div class="container" style="width: 650px;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center">SLEN TOKEN ICO SALE</h3>
+      </div>
+      <div id="content" >
+        <H4>MINT TOKEN</H4>
+          <div class="form-group row col-lg-12">
+              <input id="user_address" class="input-lg col-lg-8" type="text" name="user_address" placeholder="Address"/>
+              <input id="mint_value" class="input-lg col-lg-2" type="number" name="mint_amount" placeholder="Tokens"/>
+              <button type="button" onClick="App.mintTokens(); return false;" class="btn btn-success btn-lg col-lg-2">Mint</button>
+              <div class="mint-op"></div>
+          </div>
+        <hr>
+        <H4> TRANSFER TOKEN </H4>
+          <div class="form-group row col-lg-12">
+              <input id="transfer_address" class="input-lg col-lg-8" type="text" name="transfer_address" placeholder="Address"/>
+              <input id="amount" class="input-lg col-lg-2" type="number" name="amount" placeholder="Tokens"/>
+               <button type="button" onClick="App.transferTokens(); return false;" class="btn btn-warning btn-lg col-lg-2">Transfer</button>
+               <div class="transfer-op"></div>
+          </div>
+        <hr>
+          <div class="form-group">
+            <div class="input-group">
+              <h4>Contract address : <span class="contract"></span></h4>  
+              <h4>Token Owner : <span class="owner"></span></h4>              
+              <H6> USERS </H6>
+              <ol class="user-list">
+                <li class="receiver"> </li>
+                <li class="sender"> </li>
+              </ol>
+            </div>
+          </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>  
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
